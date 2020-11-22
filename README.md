@@ -5,7 +5,6 @@ Here are the basic files you need to create reproducible repeatable (e.g., annua
 
 > The views expressed are those of the author and should not be attributed to the NOAA.
 
-Code was developed by: 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov)
 
 Alaska Fisheries Science Center, National Marine
@@ -32,7 +31,6 @@ NOAA Tech Memo Style Guide.ens (https://github.com/emilyhmarkowitz/NOAATechMemoS
 Learn more about how to add these style guides to your EndNote database here: Video: https://www.youtube.com/watch?v=lQJzPjpgAcE; Article: https://utas.libguides.com/EndNote/Styles
 
 Learn more about how to add citations to your report in R Markdown here: https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
-
 
 ## NOAA README
 
