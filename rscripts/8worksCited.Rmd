@@ -1,0 +1,26 @@
+---
+title: ""
+author: ""
+date: ""
+output: 
+   word_document:
+     df_print: kable
+     reference_docx: word-styles-reference.docx
+---
+
+
+# Works Cited
+
+
+# R Packages
+
+```{r}
+
+RPackageCitations<-c()
+
+for (i in 1:length(PKG)){
+  RPackageCitations<-paste0(RPackageCitations, 
+                            toBibtex(citation(PKG[i])), 
+                            "\n")
+}
+```

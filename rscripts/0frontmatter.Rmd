@@ -24,7 +24,9 @@ By
 </br>
 
 
-![](C:/Users/Emii/Documents/Homework/EasternBeringSeaBottomTrawlSurvey/EBS-BTS-Report-2018/img/DeptOfCommerce.jpg){width=25%}
+
+![](img/DeptOfCommerce.jpg){width=25%}
+
 
 U.S. Department of Commerce
 
@@ -58,9 +60,7 @@ By
 **
 
 
-![](`r paste0(here(), "/img/noaa-gray.png")){width=20%}
-
-![](C:/Users/Emii/Documents/Homework/Utilities/NOAATechMemoStarterKit/img/noaa-gray.png){width=20%}
+![](img/noaa-gray.png){width=20%}
 
 `r NOAALeaders0`
 

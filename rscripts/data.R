@@ -5,4 +5,11 @@
 #' start date: 2020-10
 #' ---
 
+#Example Data
 
+Footnotes.list<-list("ExOfStandardFt" = "Wow, this project is so cool!")
+
+SURVEY<-"eastern Bering Sea"
+sectname<-"EBS-BTS-Report"
+
+dat<-read.csv(file = "./data/ebs2017_2018.csv")
