@@ -12,15 +12,58 @@ Fisheries Service, National Oceanic and Atmospheric Administration,
 Seattle, WA 98195
 
 ## What you'll need: 
-librayr(devtools)
+
+library(devtools)
 devtools::install_github("emilyhmarkowitz/RMarkReports")
 library(RMarkReports)
 
 ## How to download this starter kit:
+
 install.packages("usethis")
 library(usethis) # Automate package and project setup tasks that are otherwise performed manually.
 usethis::use_course(url = 'https://github.com/emilyhmarkowitz/NOAATechMemoStarterKit/archive/master.zip', 
                     destdir = "your/local/directory/")
+
+## How this is designed to work: 
+
+Once you have built this reproducible report, the objective to to only ever run the "run.R" file. Think of the run.R file as your skeleton, such that it connects all other scripts. Beyond minor changes or improvements to the report, nothing outside of the run.R file should change. Things kept in the run.R file include (for example):
+
+ - Author names, year of the report, etc. (since those might change from year to year)
+ - Commands that run other scripts (e.g., source() or rmarkdown::render())
+ - Anything that is way easier to run from the run file because of random technical bugs. 
+
+Consider all else sacred and only to be touched by someone who really knows what they are doing. 
+
+## How this is structured
+
+Main file
+
+ - **/citationStyles**, contains possible citation style libraries (*.cls) to choose from (aka, how your citations will be styled.)
+ - **/img**, images that need to be in the report. Below I've already added the images that go into the frontm atter of the report. 
+    - **DeptOfCommerce.jpg**
+    - **noaa-gray.png**
+ - **/IncludeInGitHub** As a NOAA user, you MUST include these files in your GitHub repositories. I've added them here for you:
+    - **README.md**
+    - **LICENSE.md** 
+ - **/output** Where all of your content from your run is saved. It's organized like this:
+    - **/YYY-MM-DD** 
+       - **/chapters**, where all content going directly into your report will be saved (e.g., .docx, .pdf).
+       - **/metadata**, where information about your run and the packages you used is saved. 
+       - **/plots**, where .rdata and other versions of your plots will be saved (additonal to those saved for the report in the '/chapters' folder).
+       - **/rawdata**, where all raw data you used in your report will be saved. Just good house keeping.
+       - **/rscripts**, where all the rscripts you used in your run are saved
+       - **/tables**, where additional verisons of your tables will be saved. I like to keep "raw" (nothing rounded or made pretty) and "print" (basically what the table would look like in the report) version of my tables so I can refer to them later or share them with people checking my work/who need table verisons of the data. 
+    - **/packrat**, A backup of all of the r packages (managed by the "packrat" package) used to create this starter kit. A good way to make sure your code will always work!
+ - **/reference**, Where useful files providing context for choices are kept, e.g., NOAA TM Style Guide PDF, etc.
+ - **/rscripts**, Where all of the rscripts and other programming files are kept. 
+    - **run.R**, the skeleton of the report where EVERYTHING is run. 
+    - **funcitons.R**, loads packages, saves files, creates file structure for the "**/output**" folder, houses local functions for the report.
+    - **dataDownload.R**; NEVER SHARE THIS FILE TO GITHUB ETC. IF IT HAS PASSWORDS IN IT.
+    - **data.R**, where data is loaded and generally manipulated/wrangled.
+    - **[*].Rmd **, the rmarkdown files used to actually generate the report's content into word.
+    - **header.yaml**, a nifty thing that makes sure all of the same bibliographys, styles, etc. are used throughout the report for all of the RMarkdown files. 
+    - **word-styles-reference.docx**, defines all of the style guide stuff (e.g., H1, p, footnotes) for the word document. 
+    
 
 ## Citations/Work Cited
 

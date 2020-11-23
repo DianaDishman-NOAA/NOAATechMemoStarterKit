@@ -13,3 +13,5 @@ SURVEY<-"eastern Bering Sea"
 sectname<-"EBS-BTS-Report"
 
 dat<-read.csv(file = "./data/ebs2017_2018.csv")
+
+write.csv(x = dat, file = paste0(dir.rawdata, "/ebs2017_2018.csv"))
