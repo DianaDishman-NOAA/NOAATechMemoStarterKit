@@ -2,9 +2,9 @@
 Here are the basic files you need to create reproducible repeatable (e.g., annual) reports in R Markdown! 
 
 > *Code is still in development
+
 > The views expressed are those of the author and should not be attributed to the NOAA.
 
-Code was developed by: 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov)
 
 Alaska Fisheries Science Center, National Marine
@@ -69,12 +69,11 @@ Main file
 
 Here (in the "reference"" folder) is an EndNote Style Guides that follow the rules and guidelines listed in the "Tech Memo Guidelines.PDF" document from the NOAA scientific publications office. Add these to your EndNote library so you can export your citations in the correct format. 
 
-NOAA Tech Memo Style Guide.ens
+NOAA Tech Memo Style Guide.ens (https://github.com/emilyhmarkowitz/NOAATechMemoStarterKit/blob/main/reference/NOAA%20Tech%20Memo%20Style%20Guide.ens)
 
 Learn more about how to add these style guides to your EndNote database here: Video: https://www.youtube.com/watch?v=lQJzPjpgAcE; Article: https://utas.libguides.com/EndNote/Styles
 
 Learn more about how to add citations to your report in R Markdown here: https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
-
 
 ## NOAA README
 
