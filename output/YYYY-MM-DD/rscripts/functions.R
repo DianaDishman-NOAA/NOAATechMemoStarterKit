@@ -23,12 +23,15 @@ PKG <- c(
 
   # Graphics
   # "ggplot2", # Create Elegant Data Visualisations Using the Grammar of Graphics
+  "nmfspalette",  # devtools::install_github("nmfs-general-modeling-tools/nmfspalette")
+
+  
   
   # Text
   "RMarkReports", # devtools::install_github("emilyhmarkowitz/RMarkReports") # Package of my favorite grammar and file managment functions for writing reproducible reports
   
   # Citations
-  "knitcitations", # install_github("cboettig/knitcitations")
+  "knitcitations", # devtools::install_github("cboettig/knitcitations")
   
   # tidyverse
   "tidyverse"
@@ -59,6 +62,7 @@ dir.tables<-paste0(dir.output.todaysrun, "/tables/")
 dir.create(dir.tables)
 dir.create(paste0(dir.output.todaysrun, "/rscripts/"))
 dir.create(paste0(dir.output.todaysrun, "/plots/"))
+dir.create(paste0(dir.output.todaysrun, "/metadata/"))
 
 # If loading in InDesign, table and figure headers need to be their own .docx. Here's a file that will do that for you. 
 # TableFigureHeader<-system.file("rmd", "TableFigureHeader.Rmd", package = "RMarkReports")

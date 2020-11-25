@@ -6,43 +6,6 @@
 #' Notes: I've updated this script several times, specifically... 
 #' ---
 
-
-####### PLEASE READ: Notes for the User Using this Script: ######
-
-##### 1. On your keyboard, press 'Shift' + 'Control' + 'O'. This will open the report outline to the right of this window. Here you can see the complete layout of this script (and all scripts) and thus, this report you are creating!
-
-#####  2. Examples in this template require that you install the following packages (script built into the 'functions.R' script. Unless otherwise noted, the below can be installed from CRAN:
-
-# Must have:
-# - knitr # A general-purpose tool for dynamic report generation in R
-# - rmarkdown # R Markdown Document Conversion
-
-# To be savvy
-# - here # For finding the root directory of your scripts and thus, find your files
-# - devtools # Package development tools for R; used here for downloading packages from GitHub
-# - packrat # Packrat is a dependency management system for R.
-
-# You'll eventually need these anyway
-# - ggplot2 # Create Elegant Data Visualisations Using the Grammar of Graphics
-# - RMarkReports; devtools::install_github("emilyhmarkowitz/RMarkReports") # Package of my favorite grammar and file managment functions for writing reproducible reports
-# - tidyr # Tidy Messy Data
-# - dplyr # A Grammar of Data Manipulation
-
-# Note, most of these are automatically loaded by installing "tidyverse" package, so I won't install some of the above when I install:
-# - tidyverse # Easily Install and Load the 'Tidyverse'
-
-
-#####  3. File Naming. 
-# May I suggest... A STRICT NAMING STRUCTURE
-# A. Filenames: [order of the chapter]_[Chapter Title for Humans to Read]_[Type of Content (e.g., "Text", "Figure", "Table")]_""
-
-  # This relates to, for example: paste0(filename0, "Text_", cnt.chapt.content,".docx")
-
-##### 4. Add the README and LICENCE files to the root directory for your GitHub
-
-#### 5. For more ways to customize your citations, check out: 
-# https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html
-
 ######START#######
 
 # Always start with a clean state by removing everything in your environment!
@@ -107,6 +70,7 @@ cnt.chapt<-"000" # Keep everything in a proper order
 plot.list<-c() # This will help us by saving R-ready plots so we can easily go back and edit them if necessary. 
 cnt.figures<-0 # This will autoname your figures with consecutive numbers (e.g., Figure 1.)
 cnt.tables<-0 # This will autoname your tables with consecutive numbers (e.g., Table 1.)
+cnt.equ<-0
 
 ######***FRONT MATTER############
 cnt.chapt<-auto_counter(cnt.chapt) # The order of the chapter in the report

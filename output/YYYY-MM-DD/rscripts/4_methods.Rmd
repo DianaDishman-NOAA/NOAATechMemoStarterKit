@@ -14,7 +14,15 @@ counter.inside<-0
 
 ## Methods
 
-Here is the report methodology!
+Here is the report methodology! Here is some equation you'll need to have in this report, of which produces the variable $X$. 
+
+```{r Eq1}
+cnt.equ<-auto_counter(cnt.equ)
+```
+
+Eq. `r cnt.equ`
+
+$$X = Y +Z$$
 
 ```{r ChunkName_NameMeAnythingAsLongAsItIsUnique}
 #Chunks are were we can write code for something later in the code. 
@@ -36,7 +44,9 @@ Footnotes<-"A footnote for this figure!"
 
 # Select data and make plot
 dat1<-dat[dat$YEAR %in% 2017,]
-plot<-qplot(dat1$LATITUDE, dat1$LONGITUDE, col = as.factor(dat1$VESSEL)) # create plot
+plot<-qplot(dat1$LATITUDE, dat1$LONGITUDE, col = as.factor(dat1$VESSEL)) + # create plot
+   nmfspalette::scale_color_nmfs() # Use NMFS Color Pallet
+
 ```
 
 
@@ -122,7 +132,7 @@ if (designflowin %in% T){
 ```
 
 
-### ifelse(designflowin %in% T, "", Title0)
+### `r ifelse(designflowin %in% T, "", Title0)`
 
 ```{r T1d}
 # Don't Edit This:

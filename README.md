@@ -1,28 +1,41 @@
 # NOAATechMemoStarterKit
+
 Here are the basic files you need to create reproducible repeatable (e.g., annual) reports in R Markdown! 
 
-> *Code is still in development
-
-> The views expressed are those of the author and should not be attributed to the NOAA.
+> Code is still in development
 
 **Emily Markowitz** (Emily.Markowitz AT noaa.gov)
 
-Alaska Fisheries Science Center, National Marine
-Fisheries Service, National Oceanic and Atmospheric Administration,
+Alaska Fisheries Science Center, 
+
+National Marine Fisheries Service, 
+
+National Oceanic and Atmospheric Administration,
+
 Seattle, WA 98195
 
-## What you'll need: 
-
-library(devtools)
-devtools::install_github("emilyhmarkowitz/RMarkReports")
-library(RMarkReports)
 
 ## How to download this starter kit:
 
+```r
 install.packages("usethis")
+
 library(usethis) # Automate package and project setup tasks that are otherwise performed manually.
+
 usethis::use_course(url = 'https://github.com/emilyhmarkowitz/NOAATechMemoStarterKit/archive/master.zip', 
                     destdir = "your/local/directory/")
+```
+
+## What you'll need: 
+
+```r
+library(devtools)
+
+devtools::install_github("emilyhmarkowitz/RMarkReports")
+
+devtools::install_github("nmfs-general-modeling-tools/nmfspalette")
+
+```
 
 ## How this is designed to work: 
 
@@ -64,6 +77,9 @@ Main file
     - **header.yaml**, a nifty thing that makes sure all of the same bibliographys, styles, etc. are used throughout the report for all of the RMarkdown files. 
     - **word-styles-reference.docx**, defines all of the style guide stuff (e.g., H1, p, footnotes) for the word document. 
     
+## Tips and Tricks
+
+**1. On your keyboard, press 'Shift' + 'Control' + 'O'.** This will open the report outline to the right of this window. Here you can see the complete layout of this script (and all scripts) and thus, this report you are creating!
 
 ## Citations/Work Cited
 

@@ -23,12 +23,15 @@ PKG <- c(
 
   # Graphics
   # "ggplot2", # Create Elegant Data Visualisations Using the Grammar of Graphics
+  "nmfspalette",  # devtools::install_github("nmfs-general-modeling-tools/nmfspalette")
+
+  
   
   # Text
   "RMarkReports", # devtools::install_github("emilyhmarkowitz/RMarkReports") # Package of my favorite grammar and file managment functions for writing reproducible reports
   
   # Citations
-  "knitcitations", # install_github("cboettig/knitcitations")
+  "knitcitations", # devtools::install_github("cboettig/knitcitations")
   
   # tidyverse
   "tidyverse"
@@ -85,6 +88,7 @@ a<-write.bibtex(entry = c(citation("knitr"),
                           citation("packrat"),
                           citation("tidyverse"),
                           citation("RMarkReports"), 
+                          citation("nmfspalette"),
                           citation("knitcitations")),
                 file = tmp)
 
